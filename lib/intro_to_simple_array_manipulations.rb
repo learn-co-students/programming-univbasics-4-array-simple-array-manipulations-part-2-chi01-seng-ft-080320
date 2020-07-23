@@ -3,19 +3,15 @@ def using_concat ( my_favorite_things, more_favs )
 
 end
 
-def using_insert (list_of_programming_languages, another_language)
-  list_of_programming_languages = ["Ruby", "JavaScript", "Java", "C#", "Objective C", "C++", "PHP"]
-  another_language = "Python"
-  list_of_programming_languages.insert(4, 'Python')
+def using_insert (array, element)
+  array.insert(4, element)
 end
 
 def using_uniq(haircuts)
-  haircuts = ["Pixie", "Bob", "Mohawk", "Crew Cut", "Linka", "Wheeler", "Bob" ]
   haircuts.uniq 
 end
 
 def using_flatten (instruments)
-  instruments = ["Saxophone", ["Piano", "Trumpet"], "Violin", "Drums", "Flute"]
   instruments.flatten  
 end
 
@@ -24,7 +20,6 @@ def using_delete (array, string)
 end
 
 def using_delete_at (famous_robots, integer)
-  famous_robots = ["Johnny 5", "R2D2", "Robocop"]
-  famous_robots.delete_at(2)
+  famous_robots.delete_at(integer)
 end 
   
